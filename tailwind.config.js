@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        planet: "url('./images/planet.jpg')",
+        'planet-mobile': "url('./images/bg-home-mobile.jpg')"
+      },
       fontFamily: {
         sans: ["Bellefair", "sans-serif"]
       },
