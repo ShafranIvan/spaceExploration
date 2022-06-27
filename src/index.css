@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,10 +6,59 @@
 @layer base {
   body {
     @apply bg-neutral;
-    @apply bg-planet-mobile;
     @apply bg-no-repeat;
     @apply bg-cover;
     @apply w-auto;
     @apply bg-fixed;
+  }
+
+  h1 {
+    @apply text-[5rem];
+    @apply md:text-h1;
+    @apply text-primary;
+  }
+  
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h5;
+    @apply md:text-h3;
+    @apply text-primary;
+  }
+  
+  h4 {
+    @apply text-h4;
+  }
+
+  h5 {
+    @apply text-base;
+    @apply md:text-h5;
+    @apply text-secondary;
+    @apply font-barlow-condensed;
+    @apply tracking-h5;
+  }
+
+  p {
+    @apply text-[15px];
+    @apply md:text-lg;
+    @apply font-barlow;
+    @apply text-secondary
+  }
+
+}
+
+@layer components {
+  .sh1 {
+    @apply text-primary;
+    @apply text-h5;
+  }
+  
+  .sh2 {
+    @apply text-secondary;
+    @apply text-sm;
+    @apply tracking-[2.3625px];
+    @apply font-barlow-condensed;
   }
 }

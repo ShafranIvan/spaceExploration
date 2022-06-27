@@ -9,12 +9,20 @@ module.exports = {
         0.25: "0.0625rem",
       },
       backgroundImage: {
-        "home-desktop": "url('./images/planet.jpg')",
-        'home-mobile': "url('./images/bg-home-mobile.jpg')",
-        'home-tablet': "url('./images/bg-home-tablet.jpg')",
+        "home-desktop": "url('./pages/Home/images/bg-home-desktop.jpg')",
+        'home-mobile':  "url('./pages/Home/images/bg-home-mobile.jpg')",
+        'home-tablet':  "url('./pages/Home/images/bg-home-tablet.jpg')",
+        "destination-desktop": "url('./pages/Destination/images/bg-destination-desktop.jpg')",
+        "destination-mobile":  "url('./pages/Destination/images/bg-destination-mobile.jpg')",
+        "destination-tablet":  "url('./pages/Destination/images/bg-destination-tablet.jpg')",
+        "planet-europa": "url('./pages/Destination/images/europa.webp",
+        "planet-titan":  "url('./pages/Destination/images/titan.webp",
+        "planet-moon":   "url('./pages/Destination/images/moon.webp",
+        "planet-mars":   "url('./pages/Destination/images/mars.webp"
       },
       letterSpacing: {
-        "nav": "0.16875em"
+        "nav": "0.16875em",
+        "h5": "0.188em",
       },
       fontSize: {
         "h1": "9.375rem",
@@ -28,7 +36,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Bellefair", "sans-serif"],
-        condensed: ["Barlow Condensed", "sans-serif"]
+        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+        "barlow": ["Barlow", "sans-serif"],
       },
       colors: {
         primary: "#FFFFFF",
