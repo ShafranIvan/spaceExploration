@@ -1,19 +1,9 @@
 import { useState } from "react";
 import icon from "../../images/icon.svg";
 import { NavLink } from "react-router-dom";
+import links from "../../pages"
 
-type link = {
-  name: string;
-  to: string;
-  id: number;
-};
-
-const links: link[] = [
-  { name: "Home", to: "/", id: 0 },
-  { name: "Destination", to: "/destination", id: 1 },
-  { name: "Crew", to: "/crew", id: 2 },
-  { name: "Technology", to: "/technology", id: 3 },
-];
+import type { link } from "../../pages"
 
 type HamburgerProps = {
   onClick: () => void;
@@ -64,7 +54,7 @@ const NavigationMenu = ({
               <NavLink
                 className={({ isActive }) => {
                   return (
-                    "my-3 ml-8 py-1 font-condensed tracking-nav text-primary hover:border-r-4 hover:border-secondary " +
+                    "my-3 uppercase ml-8 py-1 font-barlow-condensed tracking-nav text-primary hover:border-r-4 hover:border-secondary " +
                     "md:py-auto md:mx-8 md:my-0 md:flex md:h-full md:items-center md:hover:border-r-0 md:hover:border-b-4 md:focus:border-b-4 md:focus:border-r-0 " +
                     (isActive &&
                       "border-r-4 border-primary md:border-r-0 md:border-b-4")
@@ -79,7 +69,7 @@ const NavigationMenu = ({
                     useGrouping: false,
                   })}
                 </span>
-                {name.toUpperCase()}
+                {name}
               </NavLink>
             );
           })}
@@ -98,11 +88,11 @@ const Header = () => {
           className="m-6 h-10 w-10 lg:mx-12 "
           src={icon}
         />
-        <hr className="relative left-8 z-20 hidden w-full border-primary/25 pl-12 lg:inline" />
+        <hr className="relative left-8 z-40 hidden w-full border-primary/25 pl-12 lg:inline" />
 
-        <Hamburger open={open} onClick={() => setOpen(!open)} />
+        <Hamburger className="z-30" open={open} onClick={() => setOpen(!open)} />
 
-        <NavigationMenu open={open} links={links} />
+        <NavigationMenu className="z-20" open={open} links={links} />
       </header>
     </>
   );
