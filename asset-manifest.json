@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/spaceExploration/static/css/main.073c9b0a.css",
-    "main.js": "/spaceExploration/static/js/main.a1af5470.js",
+    "main.css": "/spaceExploration/static/css/main.5a8dca6a.css",
+    "main.js": "/spaceExploration/static/js/main.d9de47bf.js",
     "static/js/787.54aff212.chunk.js": "/spaceExploration/static/js/787.54aff212.chunk.js",
-    "static/media/logo.svg": "/spaceExploration/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/bg-home-desktop.jpg": "/spaceExploration/static/media/bg-home-desktop.aa0a5ad88b35cfb9ecb3.jpg",
+    "static/media/bg-destination-desktop.jpg": "/spaceExploration/static/media/bg-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/bg-home-tablet.jpg": "/spaceExploration/static/media/bg-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/bg-destination-tablet.jpg": "/spaceExploration/static/media/bg-destination-tablet.8f55d346d8b6cfd95ab7.jpg",
+    "static/media/europa.webp": "/spaceExploration/static/media/europa.c3be32383f31d0f76d96.webp",
+    "static/media/moon.webp": "/spaceExploration/static/media/moon.b5a3c90e9c8eeb2cb68d.webp",
+    "static/media/bg-home-mobile.jpg": "/spaceExploration/static/media/bg-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/mars.webp": "/spaceExploration/static/media/mars.7f55f721b4a64b7a56a8.webp",
+    "static/media/bg-destination-mobile.jpg": "/spaceExploration/static/media/bg-destination-mobile.e0131e27e751ead1a922.jpg",
+    "static/media/titan.webp": "/spaceExploration/static/media/titan.80738bc61e5d1217a19a.webp",
     "index.html": "/spaceExploration/index.html",
-    "main.073c9b0a.css.map": "/spaceExploration/static/css/main.073c9b0a.css.map",
-    "main.a1af5470.js.map": "/spaceExploration/static/js/main.a1af5470.js.map",
+    "static/media/icon.svg": "/spaceExploration/static/media/icon.7dcf366927aeddf36040724314b84d62.svg",
+    "main.5a8dca6a.css.map": "/spaceExploration/static/css/main.5a8dca6a.css.map",
+    "main.d9de47bf.js.map": "/spaceExploration/static/js/main.d9de47bf.js.map",
     "787.54aff212.chunk.js.map": "/spaceExploration/static/js/787.54aff212.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.a1af5470.js"
+    "static/css/main.5a8dca6a.css",
+    "static/js/main.d9de47bf.js"
   ]
 }
