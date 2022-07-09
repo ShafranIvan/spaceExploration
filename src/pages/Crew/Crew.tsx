@@ -12,11 +12,11 @@ const Crew = () => {
 
   return (
     <PageContainer id={"02"} title="Meet your crew">
-      <div className="mx-6 mt-8 mb-28 flex flex-col items-center text-center md:mb-0 md:mt-16 md:flex-col-reverse lg:mx-40 lg:mb-0 lg:mt-96 lg:h-full lg:flex-row lg:justify-between lg:text-left">
-        <div className="mt-10 flex flex-col lg:absolute lg:bottom-0 lg:right-[10%] lg:-z-10 lg:mt-0 lg:h-auto">
+      <div className="mx-6 mt-8 mb-28 flex flex-col items-center text-center md:mb-0 md:mt-16 md:flex-col-reverse lg:mx-40 lg:mb-0 lg:mt-36 lg:h-min lg:flex-row lg:justify-between lg:text-left">
+        <div className="mt-10 flex flex-col lg:absolute lg:bottom-0 lg:right-[10%] lg:-z-10 ">
           <img alt={alt} src={src} className="h-56 md:h-[532px] lg:h-auto" />
         </div>
-        <div className="flex flex-col items-center md:mx-32 md:h-60 md:flex-col-reverse lg:mx-0 lg:mt-auto lg:mb-24 lg:max-h-full lg:items-start">
+        <div className="flex flex-col items-center md:mx-32 md:h-60 md:flex-col-reverse lg:mx-0 lg:mt-auto lg:mb-24 lg:h-full lg:items-start">
           <hr className="w-full border-primary/10 md:hidden" />
 
           <nav className="mt-8 flex h-4 w-min justify-center lg:mt-32">
