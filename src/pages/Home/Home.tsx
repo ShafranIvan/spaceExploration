@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,18 +14,22 @@ const Home = () => {
           experience!
         </p>
       </div>
-      <motion.button
-        className="mt-20 h-40 w-40 rounded-full bg-primary outline outline-0 outline-secondary/5 md:h-60 md:w-60"
-        whileHover={{ outlineWidth: "3rem", scale: 1.1 }}
-        whileFocus={{ outlineWidth: "3rem", scale: 1.1 }}
-        transition={{ duration: 1 }}
-      >
-        <span className="relative top-1 z-0 text-xl tracking-[1.25px] md:text-3xl">
-          EXPLORE
-        </span>
-      </motion.button>
+
+      <Link to="/destination/">
+        <motion.button
+          className="mt-20 h-40 w-40 rounded-full bg-primary outline outline-0 outline-secondary/5 md:h-60 md:w-60"
+          whileHover={{ outlineWidth: "3rem", scale: 1.1 }}
+          whileFocus={{ outlineWidth: "3rem", scale: 1.1 }}
+          transition={{ duration: 1 }}
+          data-testid="explore-button"
+        >
+          <span className="relative top-1 z-0 text-xl tracking-[1.25px] md:text-3xl">
+            EXPLORE
+          </span>
+        </motion.button>
+      </Link>
     </div>
   );
 };
 
-export default Home
+export default Home;

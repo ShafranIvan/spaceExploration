@@ -1,9 +1,9 @@
 import { useState } from "react";
 import icon from "../../images/icon.svg";
 import { NavLink } from "react-router-dom";
-import links from "../../pages"
+import links from "../../links";
 
-import type { link } from "../../pages"
+import type { link } from "../../links";
 
 type HamburgerProps = {
   onClick: () => void;
@@ -16,6 +16,7 @@ const Hamburger = ({ open, onClick, className }: HamburgerProps) => {
     "bg-secondary ease-linear duration-150 group-focus:bg-primary group-hover:bg-primary justify-center w-6 h-1 my-1 mx-0 block ";
   return (
     <button
+      aria-label="Open navigation menu"
       className={
         "group z-10 m-6 h-6 w-6 cursor-pointer items-center sm:hidden " +
         className
@@ -29,51 +30,47 @@ const Hamburger = ({ open, onClick, className }: HamburgerProps) => {
   );
 };
 
-type MobileNavigationMenuProps = {
+type NavigationMenuProps = {
   open: boolean;
   links: link[];
   className?: string;
 };
 
-const NavigationMenu = ({
-  open,
-  links,
-  className,
-}: MobileNavigationMenuProps) => {
+const NavigationMenu = ({ open, links, className }: NavigationMenuProps) => {
   return (
-        <div
-          className={
-            (open ? "w-2/3 " : "w-0 ") +
-            "fixed right-0 top-0 flex h-screen flex-col bg-primary/5 py-28 backdrop-blur-3xl transition-all duration-150 " +
-            "md:static md:h-full md:w-auto md:flex-row md:px-4 md:py-0 lg:pr-40 lg:pl-32 " +
-            className
-          }
-        >
-          {links.map(({ name, to, id }, i) => {
-            return (
-              <NavLink
-                className={({ isActive }) => {
-                  return (
-                    "my-3 uppercase ml-8 py-1 font-barlow-condensed tracking-nav text-primary hover:border-r-4 hover:border-secondary " +
-                    "md:py-auto md:mx-8 md:my-0 md:flex md:h-full md:items-center md:hover:border-r-0 md:hover:border-b-4 md:focus:border-b-4 md:focus:border-r-0 " +
-                    (isActive &&
-                      "border-r-4 border-primary md:border-r-0 md:border-b-4")
-                  );
-                }}
-                to={to}
-                key={id}
-              >
-                <span className="mr-3 inline font-bold md:hidden lg:block">
-                  {i.toLocaleString("en-US", {
-                    minimumIntegerDigits: 2,
-                    useGrouping: false,
-                  })}
-                </span>
-                {name}
-              </NavLink>
-            );
-          })}
-        </div>
+    <div
+      className={
+        (open ? "w-2/3 " : "w-0 ") +
+        "fixed right-0 top-0 flex h-screen flex-col bg-primary/5 py-28 backdrop-blur-3xl transition-all duration-150 " +
+        "md:static md:h-full md:w-auto md:flex-row md:px-4 md:py-0 lg:pr-40 lg:pl-32 " +
+        className
+      }
+    >
+      {links.map(({ name, to, id }, i) => {
+        return (
+          <NavLink
+            className={({ isActive }) => {
+              return (
+                "my-3 ml-8 py-1 font-barlow-condensed uppercase tracking-nav text-primary hover:border-r-4 hover:border-primary/50 " +
+                "md:py-auto md:mx-8 md:my-0 md:flex md:h-full md:items-center md:hover:border-r-0 md:hover:border-b-4 md:focus:border-b-4 md:focus:border-r-0 " +
+                (isActive &&
+                  "border-r-4 border-primary md:border-r-0 md:border-b-4")
+              );
+            }}
+            to={to}
+            key={id}
+          >
+            <span className="mr-3 inline font-bold md:hidden lg:block">
+              {i.toLocaleString("en-US", {
+                minimumIntegerDigits: 2,
+                useGrouping: false,
+              })}
+            </span>
+            {name}
+          </NavLink>
+        );
+      })}
+    </div>
   );
 };
 
@@ -90,7 +87,11 @@ const Header = () => {
         />
         <hr className="relative left-8 z-40 hidden w-full border-primary/25 pl-12 lg:inline" />
 
-        <Hamburger className="z-30" open={open} onClick={() => setOpen(!open)} />
+        <Hamburger
+          className="z-30"
+          open={open}
+          onClick={() => setOpen(!open)}
+        />
 
         <NavigationMenu className="z-20" open={open} links={links} />
       </header>

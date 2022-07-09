@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1440px',
+    },
     extend: {
       height: {
         0.25: "0.0625rem",
@@ -15,6 +20,12 @@ module.exports = {
         "destination-desktop": "url('./pages/Destination/images/bg-destination-desktop.jpg')",
         "destination-mobile":  "url('./pages/Destination/images/bg-destination-mobile.jpg')",
         "destination-tablet":  "url('./pages/Destination/images/bg-destination-tablet.jpg')",
+        "crew-desktop": "url('./pages/Crew/images/bg-crew-desktop.jpg')",
+        "crew-mobile":  "url('./pages/Crew/images/bg-crew-mobile.jpg')",
+        "crew-tablet":  "url('./pages/Crew/images/bg-crew-tablet.jpg')",
+        "technology-desktop": "url('./pages/Technology/images/bg-technology-desktop.jpg')",
+        "technology-mobile":  "url('./pages/Technology/images/bg-technology-mobile.jpg')",
+        "technology-tablet":  "url('./pages/Technology/images/bg-technology-tablet.jpg')",
         "planet-europa": "url('./pages/Destination/images/europa.webp",
         "planet-titan":  "url('./pages/Destination/images/titan.webp",
         "planet-moon":   "url('./pages/Destination/images/moon.webp",

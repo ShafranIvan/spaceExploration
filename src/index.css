@@ -5,6 +5,8 @@
 
 @layer base {
   body {
+    @apply h-full;
+    @apply m-0;
     @apply bg-neutral;
     @apply bg-no-repeat;
     @apply bg-cover;
@@ -13,28 +15,46 @@
   }
 
   h1 {
+    @apply uppercase;
     @apply text-[5rem];
     @apply md:text-h1;
     @apply text-primary;
   }
-  
+
   h2 {
-    @apply text-h2;
+    @apply uppercase;
+
+    @apply text-h3;
+    @apply md:text-[80px];
+    @apply lg:text-h2;
+
+    @apply text-primary;
   }
 
   h3 {
+    @apply uppercase;
+
     @apply text-h5;
-    @apply md:text-h3;
+    @apply md:text-[40px];
+    @apply lg:text-h3;
     @apply text-primary;
   }
-  
+
   h4 {
-    @apply text-h4;
+    @apply uppercase;
+
+    @apply text-base;
+    @apply md:text-2xl;
+    @apply lg:text-h4;
+    @apply text-primary;
   }
 
   h5 {
+    @apply uppercase;
+
     @apply text-base;
-    @apply md:text-h5;
+    @apply md:text-xl;
+    @apply lg:text-h5;
     @apply text-secondary;
     @apply font-barlow-condensed;
     @apply tracking-h5;
@@ -51,11 +71,15 @@
 
 @layer components {
   .sh1 {
+    @apply uppercase;
+
     @apply text-primary;
     @apply text-h5;
   }
-  
+
   .sh2 {
+    @apply uppercase;
+
     @apply text-secondary;
     @apply text-sm;
     @apply tracking-[2.3625px];
