@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/spaceExploration/static/css/main.e337f195.css",
-    "main.js": "/spaceExploration/static/js/main.310f112b.js",
+    "main.css": "/spaceExploration/static/css/main.7f832492.css",
+    "main.js": "/spaceExploration/static/js/main.51023aa8.js",
     "static/js/872.4e24eee4.chunk.js": "/spaceExploration/static/js/872.4e24eee4.chunk.js",
     "static/js/965.f1cff541.chunk.js": "/spaceExploration/static/js/965.f1cff541.chunk.js",
-    "static/js/243.22c56f2c.chunk.js": "/spaceExploration/static/js/243.22c56f2c.chunk.js",
+    "static/js/10.ede8f236.chunk.js": "/spaceExploration/static/js/10.ede8f236.chunk.js",
     "static/js/20.9318639f.chunk.js": "/spaceExploration/static/js/20.9318639f.chunk.js",
     "static/js/787.54aff212.chunk.js": "/spaceExploration/static/js/787.54aff212.chunk.js",
     "static/js/286.5da08d78.chunk.js": "/spaceExploration/static/js/286.5da08d78.chunk.js",
@@ -34,17 +34,17 @@
     "static/media/titan.webp": "/spaceExploration/static/media/titan.80738bc61e5d1217a19a.webp",
     "index.html": "/spaceExploration/index.html",
     "static/media/icon.svg": "/spaceExploration/static/media/icon.7dcf366927aeddf36040724314b84d62.svg",
-    "main.e337f195.css.map": "/spaceExploration/static/css/main.e337f195.css.map",
-    "main.310f112b.js.map": "/spaceExploration/static/js/main.310f112b.js.map",
+    "main.7f832492.css.map": "/spaceExploration/static/css/main.7f832492.css.map",
+    "main.51023aa8.js.map": "/spaceExploration/static/js/main.51023aa8.js.map",
     "872.4e24eee4.chunk.js.map": "/spaceExploration/static/js/872.4e24eee4.chunk.js.map",
     "965.f1cff541.chunk.js.map": "/spaceExploration/static/js/965.f1cff541.chunk.js.map",
-    "243.22c56f2c.chunk.js.map": "/spaceExploration/static/js/243.22c56f2c.chunk.js.map",
+    "10.ede8f236.chunk.js.map": "/spaceExploration/static/js/10.ede8f236.chunk.js.map",
     "20.9318639f.chunk.js.map": "/spaceExploration/static/js/20.9318639f.chunk.js.map",
     "787.54aff212.chunk.js.map": "/spaceExploration/static/js/787.54aff212.chunk.js.map",
     "286.5da08d78.chunk.js.map": "/spaceExploration/static/js/286.5da08d78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e337f195.css",
-    "static/js/main.310f112b.js"
+    "static/css/main.7f832492.css",
+    "static/js/main.51023aa8.js"
   ]
 }
