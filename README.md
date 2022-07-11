@@ -32,6 +32,7 @@ Users should be able to:
 
 - Solution URL: [Click](https://github.com/ShafranIvan/spaceExploration/tree/master)
 - Live Site URL: [Clack](https://shafranivan.github.io/spaceExploration/#/)
+- Figma Design URL: [Cluck](https://www.figma.com/file/y5AWdF3qo8sVA4PB4OqJ5k/space-tourism-website?node-id=0%3A1)
 
 ## My process
 
