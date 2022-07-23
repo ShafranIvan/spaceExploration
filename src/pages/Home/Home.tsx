@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = "Explore";
+  }, []);
+
   return (
-    <div className="m-6 mt-24 flex flex-col items-center text-center lg:mx-40 lg:mt-60 lg:flex-row lg:justify-between">
+    <div className="m-6 mt-24 flex flex-col items-center text-center lg:mx-40 lg:my-auto lg:flex-row lg:justify-between lg:flex-grow">
       <div className="md:w-[29rem]">
         <h5>SO, YOU WANT TO TRAVEL TO</h5>
         <h1>SPACE</h1>

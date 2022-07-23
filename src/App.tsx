@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 
 import links from "./links";
 
-const Home = React.lazy(() =>  import("./pages/Home/Home"));
+import Home from "./pages/Home/Home"
 const Destination = React.lazy(() =>  import("./pages/Destination/Destination"));
 const Crew = React.lazy(() =>  import("./pages/Crew/Crew"));
 const Technology = React.lazy(() =>  import("./pages/Technology/Technology"));
@@ -26,7 +26,7 @@ function App() {
   }, [path]);
 
   return (
-    <>
+    <div className="lg:h-screen overflow-hidden flex flex-col">
       <div
         className={
           "fixed top-0 left-0 -z-50 h-screen w-screen bg-neutral bg-cover bg-fixed bg-no-repeat " +
@@ -58,7 +58,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
-    </>
+    </div>
   );
 }
 
